@@ -27,13 +27,12 @@ We compare **3 approaches**:
 
 ## 🧭 Project Workflow
 
-```mermaid
-graph LR
-    A[Data & Labels/nEmoHi-58K (28 emotions)] --> B[Preprocess/ncleaning, tokenization]
-    B --> C[Baselines/nTF-IDF + SVM]
-    B --> D[Deep Learning/nBi-LSTM]
-    B --> E[Transformer/nDistilBERT (m-cased)]
-    C --> F[Evaluation]
+graph TD
+    A["Dataset\n(EmoHi-58K, 28 emotions)"] --> B["Text Preprocessing"]
+    B --> C["TF-IDF + SVM"]
+    B --> D["Bi-LSTM"]
+    B --> E["DistilBERT"]
+    C --> F["Evaluation"]
     D --> F
     E --> F
-    F --> G[Compare & Pick Best]
+    F --> G["Model Comparison"]
