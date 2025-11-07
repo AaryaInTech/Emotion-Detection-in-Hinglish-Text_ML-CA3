@@ -29,10 +29,10 @@ We compare **3 approaches**:
 
 ```mermaid
 graph LR
-    A[Data & Labels<br/>EmoHi-58K (28 emotions)] --> B[Preprocess<br/>cleaning, tokenization]
-    B --> C[Baselines<br/>TF-IDF + SVM]
-    B --> D[Deep Learning<br/>Bi-LSTM]
-    B --> E[Transformer<br/>DistilBERT (m-cased)]
+    A[Data & Labels/nEmoHi-58K (28 emotions)] --> B[Preprocess/ncleaning, tokenization]
+    B --> C[Baselines/nTF-IDF + SVM]
+    B --> D[Deep Learning/nBi-LSTM]
+    B --> E[Transformer/nDistilBERT (m-cased)]
     C --> F[Evaluation]
     D --> F
     E --> F
