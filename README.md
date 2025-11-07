@@ -79,6 +79,25 @@ pip install -r requirements.txt
   - Pretraining on large multilingual corpora
   - Ability to handle code-mixed Hindi-English text
   - Contextual word embeddings rather than fixed vectors
+    
+---
+
+## 6. Conclusion  
+The experiment shows that as models become more context-aware, their ability to correctly detect multiple emotions in Hinglish text improves significantly.  
+Traditional lexical models such as SVM lack semantic understanding and therefore perform poorly on multi-label emotion tasks.  
+The Bi-LSTM model captures sequential information and improves performance, but the best results are achieved by the transformer-based DistilBERT model, which benefits from multilingual pretraining and contextual token representations.  
+Overall, transformer models are the most suitable choice for real-world Hinglish emotion recognition applications.
+
+---
+
+## 7. References  
+* EmoHi-58K Dataset (Kaggle)  
+* Demszky et al., “GoEmotions: A Dataset of Fine-Grained Emotions,” Google Research  
+* Vaswani et al., “Attention Is All You Need,” 2017  
+* Hugging Face Transformers Documentation  
+* Scikit-Learn Machine Learning Library  
+* TensorFlow / Keras Documentation  
+* PyTorch Documentation
 
 
 
