@@ -57,9 +57,11 @@ Three different modeling approaches were used:
 
 ### Clone and install
 ```bash
-git clone https://github.com/<your-username>/emotion-recognition-hinglish.git
-cd emotion-recognition-hinglish
+git clone https://github.com/AaryaInTech/Emotion-Detection-in-Hinglish-Text_ML-CA3.git
+cd Emotion-Detection-in-Hinglish-Text_ML-CA3
 pip install -r requirements.txt
+
+---
 
 ## 5. Experiments & Results
 
