@@ -75,7 +75,7 @@ https://www.kaggle.com/datasets/debadityashome/emohi58k-finegrained-hindi-emotio
 ---
 
 ## 4. Project Workflow
-
+```
 graph LR
     A["Dataset: EmoHi-58K"] --> B["Preprocessing"]
     B --> C["SVM\n(TF-IDF)"]
@@ -85,7 +85,7 @@ graph LR
     D --> F
     E --> F
     F --> G["Model Comparison"]
-
+```
 ---
 
 ## 5. Experiments & Results
