@@ -105,23 +105,7 @@ DistilBERT (m-cased)	0.368	0.418	0.368	0.416
 
 ---
 
-## 6. How to Run the Code
-```
-* ✅ Install dependencies
-pip install -r requirements.txt
-
-* ✅ Open notebook for training
-notebooks/emotion_recognition_hinglish.ipynb
-
-* ✅ Optional: Run inference from terminal
-python src/predict.py --text "mujhe bahut gussa aa raha hai"
-
-* Expected output
-['anger', 'annoyance']
-```
----
-
-## 7. Conclusion
+## 6. Conclusion
 
 The experiments show that classical ML methods such as SVM struggle with multi-label Hinglish emotion classification, while sequence-based models like LSTM perform better by learning word order.
 However, the best performance is achieved by the DistilBERT transformer model, which leverages contextual multilingual embeddings and handles code-mixed text effectively.
@@ -129,7 +113,7 @@ This confirms that transformer-based architectures are currently the most suitab
 
 ---
 
-## 8. References
+## 7. References
 
 EmoHi-58K Dataset – Kaggle
 
