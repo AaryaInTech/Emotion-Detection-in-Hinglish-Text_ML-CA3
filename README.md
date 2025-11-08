@@ -104,17 +104,19 @@ DistilBERT (m-cased)	0.368	0.418	0.368	0.416
 
 * Traditional ML alone is not sufficient for code-mixed Hinglish text
 
-6. How to Run the Code
-✅ Install dependencies
+---
+
+## 6. How to Run the Code
+* ✅ Install dependencies
 pip install -r requirements.txt
 
-✅ Open notebook for training
+* ✅ Open notebook for training
 notebooks/emotion_recognition_hinglish.ipynb
 
-✅ Optional: Run inference from terminal
+* ✅ Optional: Run inference from terminal
 python src/predict.py --text "mujhe bahut gussa aa raha hai"
 
-Expected output
+* Expected output
 ['anger', 'annoyance']
 
 ---
