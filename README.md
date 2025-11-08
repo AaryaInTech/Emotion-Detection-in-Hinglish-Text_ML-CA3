@@ -76,17 +76,16 @@ https://www.kaggle.com/datasets/debadityashome/emohi58k-finegrained-hindi-emotio
 
 ## 4. Project Workflow
 
-```mermaid
 graph LR
-    A[Dataset: EmoHi-58K] --> B[Preprocessing]
-    B --> C[SVM (TF-IDF)]
-    B --> D[Bi-LSTM]
-    B --> E[DistilBERT]
-    C --> F[Evaluation]
+    A["Dataset: EmoHi-58K"] --> B["Preprocessing"]
+    B --> C["SVM\n(TF-IDF)"]
+    B --> D["Bi-LSTM"]
+    B --> E["DistilBERT"]
+    C --> F["Evaluation"]
     D --> F
     E --> F
-    F --> G[Model Comparison]
-```
+    F --> G["Model Comparison"]
+
 ---
 
 ## 5. Experiments & Results
