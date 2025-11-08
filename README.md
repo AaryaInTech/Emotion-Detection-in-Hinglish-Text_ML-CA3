@@ -89,10 +89,13 @@ graph LR
 ---
 
 ## 5. Experiments & Results
-Model	Valid Acc	Valid F1	Test Acc	Test F1
-TF-IDF + SVM	0.169	0.193	0.170	0.193
-Bi-LSTM	0.306	0.345	0.299	0.338
-DistilBERT (m-cased)	0.368	0.418	0.368	0.416
+
+| Model              | Valid Acc | Valid F1 | Test Acc | Test F1 |
+|--------------------|-----------|----------|----------|---------|
+| TF-IDF + SVM       | 0.169     | 0.193    | 0.170    | 0.193   |
+| Bi-LSTM            | 0.306     | 0.345    | 0.299    | 0.338   |
+| **DistilBERT (m-cased)** | **0.368** | **0.418** | **0.368** | **0.416** |
+
 
 ### 📊 Key Observations
 * Exact-match accuracy is strict in multi-label problems — F1-score is a better metric
