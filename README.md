@@ -86,3 +86,55 @@ graph LR
     D --> F
     E --> F
     F --> G[Model Comparison]
+```
+---
+
+## 5. Experiments & Results
+Model	Valid Acc	Valid F1	Test Acc	Test F1
+TF-IDF + SVM	0.169	0.193	0.170	0.193
+Bi-LSTM	0.306	0.345	0.299	0.338
+DistilBERT (m-cased)	0.368	0.418	0.368	0.416
+
+### 📊 Key Observations
+* Exact-match accuracy is strict in multi-label problems — F1-score is a better metric
+
+* Performance steadily improves from SVM → LSTM → DistilBERT
+
+* DistilBERT performs best due to contextual understanding + multilingual pretraining
+
+* Traditional ML alone is not sufficient for code-mixed Hinglish text
+
+6. How to Run the Code
+✅ Install dependencies
+pip install -r requirements.txt
+
+✅ Open notebook for training
+notebooks/emotion_recognition_hinglish.ipynb
+
+✅ Optional: Run inference from terminal
+python src/predict.py --text "mujhe bahut gussa aa raha hai"
+
+Expected output
+['anger', 'annoyance']
+
+---
+
+## 7. Conclusion
+
+The experiments show that classical ML methods such as SVM struggle with multi-label Hinglish emotion classification, while sequence-based models like LSTM perform better by learning word order.
+However, the best performance is achieved by the DistilBERT transformer model, which leverages contextual multilingual embeddings and handles code-mixed text effectively.
+This confirms that transformer-based architectures are currently the most suitable choice for emotion recognition in Indian social media text.
+
+---
+
+## 8. References
+
+EmoHi-58K Dataset – Kaggle
+
+HuggingFace Transformers Documentation
+
+Scikit-Learn Machine Learning Library
+
+TensorFlow / Keras
+
+PyTorch Documentation
